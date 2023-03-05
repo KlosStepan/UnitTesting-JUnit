@@ -55,7 +55,6 @@ public class Statistics {
         for (String name : sm.keySet()) {
             System.out.println("<" + name + ", " + sm.get(name) + ">");
         }
-        String expected = "<Alsovsky, 17500>\r\n<Brauner, 29500>\r\n<Kohutek, 28000>\r\n<Yvorsky, 15000>\r\n<Zabilov, 14000>";
     }
 
     void LoopAll() {

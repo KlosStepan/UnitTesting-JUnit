@@ -3,6 +3,9 @@ package cz.stkl.app;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Test;
@@ -38,14 +41,23 @@ public class StatisticsTest {
     }
 
     @Test
-    public void Sort3GuysPrint() {
+    public void Sort5GuysPrint() {
+        ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+        ByteArrayOutputStream errContent = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outContent));
+        System.setErr(new PrintStream(errContent));
+
         People p = new People();
         p.add("Yvorsky", 15000);
         p.add("Brauner", 29500);
         p.add("Zabilov", 14000);
         p.add("Kohutek", 28000);
         p.add("Alsovsky", 17500);
+
         Statistics s = new Statistics(p);
         s.printSalariesByName();
+
+        String expected = "<Alsovsky, 17500>\n<Brauner, 29500>\n<Kohutek, 28000>\n<Yvorsky, 15000>\n<Zabilov, 14000>";
+        assertEquals(expected, outContent.toString().trim());
     }
 }
