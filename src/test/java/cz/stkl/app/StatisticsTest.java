@@ -12,11 +12,6 @@ import org.junit.Test;
 
 public class StatisticsTest {
     @Test
-    public void shouldAnswerWithTrue() {
-        assertTrue(true);
-    }
-
-    @Test
     public void AverageOf3Salaries() {
         People p = new People();
         p.add("Svoboda", 32000);
