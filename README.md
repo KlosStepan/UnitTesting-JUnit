@@ -15,13 +15,15 @@ Interface Employees
     int getSalary(int id);
     void changeSalary(int id, int newSalary);
 ```
-Functions for Statistics
+Functions for Statistics - that have to be tested
 ```java
     int computeAverageSalary();
     int getMinSalary();
     void printSalariesByName(); // prints the list of pairs <name, salary> that is sorted by employee names
 ```
- Person -> People implements Employees -> Statistics(ctor (object&: Employees))
+Encapsulation and implementation of dummy scenario is as follows:  
+**Person.java** -> **People.java** implements Employees -> **Statistics.java**(ctor (object&: Employees))  
+Then StatisticsTest.java runs there JUnit tests:  
 - AverageOf3Salaries()  
 - MinSalaryOf5()  
 - Sort5GuysPrint()    
