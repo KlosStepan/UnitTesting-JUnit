@@ -1,11 +1,21 @@
 # UnitTesting-JUnit
 We wrote tests for Java structure, classes etc. to learn JUnit (w/ hamcrest) and Apache Maven project setup. 
+
+We can test by command line command
+```
+mvn clean test
+```
+and get output
+![alt text](misc/Tsts-All.png)  
+for all in tests run in /test/java/cz/stkl/app folder.
 # I. TreeMap<K,V> tests
 main/.. **App.java** & test/.. **AppTest.java**
 - public void InsertFourUniqueTestKeys()  
 - public void Insert7UniqueTestSize7()  
 - public void Insert3But2SameKeyTestRecentOnKey()  
-- public void Insert50DeleteAllTestSize0()  
+- public void Insert50DeleteAllTestSize0() 
+
+![alt text](misc/Tsts-TreeMap.png)
 # II. Custom structure - interfaces, more complex functions
 Interface Employees   
 ```java
@@ -26,6 +36,8 @@ Encapsulation and implementation of dummy scenario is as follows:
 Then StatisticsTest.java runs there JUnit tests:  
 - AverageOf3Salaries()  
 - MinSalaryOf5()  
-- Sort5GuysPrint()    
+- Sort5GuysPrint()  
+
+![alt text](misc/Tsts-Statistics.png)  
 # Idk what's 3rd - some data stuff
 TODO..

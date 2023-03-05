@@ -55,7 +55,7 @@ public class StatisticsTest {
         String expected = "<Alsovsky, 17500>\n<Brauner, 29500>\n<Kohutek, 28000>\n<Yvorsky, 15000>\n<Zabilov, 14000>";
         assertEquals(expected, outContent.toString().trim());
 
-        System.setOut(null);
-        System.setErr(null);
+        // System.setOut(null);
+        // System.setErr(null);
     }
 }
