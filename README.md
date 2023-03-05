@@ -1,5 +1,5 @@
 # UnitTesting-JUnit
-Some tests for Java structure, classes etc.
+We wrote tests for Java structure, classes etc. in order to learn JUnit (w/ hamcrest) and Apache Maven project setup. 
 # I. TreeMap<K,V> tests
 main/.. **App.java** & test/.. **AppTest.java**
 # II. Custom structure - interfaces, more complex functions
