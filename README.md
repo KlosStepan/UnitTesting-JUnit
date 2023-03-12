@@ -39,5 +39,7 @@ Then StatisticsTest.java runs there JUnit tests:
 - Sort5GuysPrint()  
 
 ![alt text](misc/Tsts-Statistics.png)  
-# Idk what's 3rd - some data stuff
-TODO..
+# III. Some data stuff fiddle
+For this task I found some tests which were run on Android devices. I studied the format assumptions and some of the failing tests. The main reason was different degion localization.  
+![alt text](misc/Tsts-Dates-III.png)
+This has nothing in src/main/java/cz/stkl/app/DateTesing.java since nothing was implemented and everything in src/test/java/cz/stkl/app/DataTestingJava.java
